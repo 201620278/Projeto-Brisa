@@ -18,6 +18,7 @@ class Contrato(models.Model):
     estado = models.CharField(max_length=128, choices=CONTRATO_ESTADO)
     data_remocao = models.DateTimeField(auto_now=True)
 
+# Registra os alteraçoes do contrato se ouver
 class ContratoEvento(models.Model):
     data_criacao = models.DateTimeField('Data de criação', auto_now_add=True)
     data_atualizacao = models.DateTimeField('Data de atualização', auto_now=True)

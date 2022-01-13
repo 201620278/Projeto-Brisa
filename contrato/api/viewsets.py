@@ -9,4 +9,3 @@ from contrato.api.serializers import ContratoSerialize
 class ContratoViewSet(viewsets.ModelViewSet):
     queryset = Contrato.objects.all()
     serializer_class = ContratoSerialize
-
